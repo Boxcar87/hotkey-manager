@@ -13,7 +13,6 @@ class HotKeyManager{
     }
 
     __subscribe__() {
-        console.log(this._field);
         this._field.addEventListener('keydown', this.__buildHotKey__);
         this._field.addEventListener('click', this.__clearHotKey__);
         this._button.addEventListener('click', this.__clearHotKey__);
