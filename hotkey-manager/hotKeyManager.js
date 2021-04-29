@@ -21,9 +21,9 @@ class HotKeyManager{
     __buildHotKey__(_key){
         var i = 0; 
 
-        // console.log('receiving key: ' + _key);
+        // console.log('receiving key: ' + _key.key);
         if(this._keys.length == 0){
-            // console.log('no keys detected, adding key: ' + _key);
+            // console.log('no keys detected, adding key: ' + _key.key);
             this._keys.push(_key);
             this._hotkeyDisplay = _key.key.toString();
         }        
@@ -37,7 +37,7 @@ class HotKeyManager{
             });
 
             if(i == 0){
-                // console.log('adding unique key: '+ _key);
+                // console.log('adding unique key: '+ _key.key);
                 this._keys.push(_key);
                 this._hotkeyDisplay += (' + ' + _key.key);
             }
