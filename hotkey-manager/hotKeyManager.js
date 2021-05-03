@@ -41,7 +41,7 @@ class HotKeyManager{
                 this._keys.push(_key);
                 this._hotkeyDisplay += (' + ' + _key.key);
             }
-            var i = 0;
+            i = 0;
         }
         this._field.value = this._hotkeyDisplay.toUpperCase();
         if(_key.keyCode != '160' && _key.keyCode != '162' && _key.keyCode != '164'){
